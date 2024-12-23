@@ -9,4 +9,5 @@ class AppColor {
   static late Color backgroundColor;
   static late Color tileColor;
   static late Color limeGreen;
+  static late Color fontColor;
 }
