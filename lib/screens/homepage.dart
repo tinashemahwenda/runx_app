@@ -90,6 +90,30 @@ class HomePage extends StatelessWidget {
                   ],
                 ),
               ),
+            ),
+            Padding(
+              padding: const EdgeInsets.all(20.0),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Text(
+                    'Upcoming Runs',
+                    style: TextStyle(
+                      color: AppColor.fontColor,
+                      fontWeight: FontWeight.bold,
+                      fontSize: 25,
+                    ),
+                  ),
+                  Text(
+                    'View All',
+                    style: TextStyle(
+                      fontSize: 12,
+                      color: AppColor.limeGreen,
+                      decoration: TextDecoration.underline,
+                    ),
+                  )
+                ],
+              ),
             )
           ],
         ));
