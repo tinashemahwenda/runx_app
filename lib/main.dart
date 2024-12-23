@@ -23,6 +23,7 @@ class RunXApp extends StatelessWidget {
       return MaterialApp(
         home: HomePage(),
         theme: ThemeData(fontFamily: 'Manrope'),
+        debugShowCheckedModeBanner: false,
       );
     });
   }
