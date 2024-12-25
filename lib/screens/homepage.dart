@@ -2,8 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:runx_app/constants/app_constants.dart';
 import 'package:runx_app/widgets/run_event_box.dart';
 import 'package:runx_app/widgets/training_plan_box.dart';
-import 'package:runx_app/widgets/view_all_button.dart';
-
 import '../widgets/view_calendar_box.dart';
 
 class HomePage extends StatelessWidget {
