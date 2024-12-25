@@ -12,6 +12,7 @@ class HomePage extends StatelessWidget {
     return Scaffold(
         backgroundColor: AppColor.backgroundColor,
         body: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             SizedBox(
               height: 40,
@@ -88,7 +89,18 @@ class HomePage extends StatelessWidget {
                   RunEventBox(),
                 ],
               ),
-            )
+            ),
+            Padding(
+              padding: const EdgeInsets.all(20.0),
+              child: Text(
+                'Training Plans',
+                style: TextStyle(
+                  color: AppColor.fontColor,
+                  fontWeight: FontWeight.bold,
+                  fontSize: 25,
+                ),
+              ),
+            ),
           ],
         ));
   }
