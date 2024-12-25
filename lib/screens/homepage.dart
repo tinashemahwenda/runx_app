@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:runx_app/constants/app_constants.dart';
 import 'package:runx_app/widgets/run_event_box.dart';
+import 'package:runx_app/widgets/view_all_button.dart';
 
 import '../widgets/view_calendar_box.dart';
 
@@ -101,6 +102,25 @@ class HomePage extends StatelessWidget {
                 ),
               ),
             ),
+            Row(
+              children: [
+                Container(
+                  child: Column(
+                    children: [
+                      Text('Beginner'),
+                      Column(
+                        children: [
+                          Text('5k'),
+                          ViewAllButton(
+                            buttonText: 'View Plans',
+                          )
+                        ],
+                      )
+                    ],
+                  ),
+                )
+              ],
+            )
           ],
         ));
   }

@@ -3,7 +3,8 @@ import 'package:flutter/material.dart';
 import '../constants/app_constants.dart';
 
 class ViewAllButton extends StatelessWidget {
-  const ViewAllButton({super.key});
+  final String buttonText;
+  const ViewAllButton({super.key, required this.buttonText});
 
   @override
   Widget build(BuildContext context) {
@@ -13,7 +14,7 @@ class ViewAllButton extends StatelessWidget {
         color: AppColor.limeGreen,
         padding: EdgeInsets.all(15),
         child: Text(
-          'View Full Calendar',
+          buttonText,
           style: TextStyle(
             fontWeight: FontWeight.bold,
             fontSize: 12,

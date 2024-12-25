@@ -32,7 +32,9 @@ class ViewCalendarBox extends StatelessWidget {
                 ),
               ),
             ),
-            ViewAllButton()
+            ViewAllButton(
+              buttonText: 'View Full Calendar',
+            )
           ],
         ),
       ),
