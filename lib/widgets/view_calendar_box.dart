@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:runx_app/widgets/view_all_button.dart';
 
 import '../constants/app_constants.dart';
 
@@ -31,20 +32,7 @@ class ViewCalendarBox extends StatelessWidget {
                 ),
               ),
             ),
-            ClipRRect(
-              borderRadius: BorderRadius.circular(30),
-              child: Container(
-                color: AppColor.limeGreen,
-                padding: EdgeInsets.all(15),
-                child: Text(
-                  'View Full Calendar',
-                  style: TextStyle(
-                    fontWeight: FontWeight.bold,
-                    fontSize: 12,
-                  ),
-                ),
-              ),
-            )
+            ViewAllButton()
           ],
         ),
       ),
