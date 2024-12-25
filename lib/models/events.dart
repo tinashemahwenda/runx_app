@@ -26,3 +26,20 @@ class MonthlyRaceData {
     );
   }
 }
+
+class MonthlyRaces {
+  final String month;
+  final List<MonthlyRaceData> events;
+
+  MonthlyRaces({
+    required this.month,
+    required this.events,
+  });
+
+  factory MonthlyRaces.fromJson(String month, List<dynamic> json) {
+    return MonthlyRaces(
+      month: month,
+      events: json.map((e) => MonthlyRaceData.fromJson(e)).toList(),
+    );
+  }
+}
