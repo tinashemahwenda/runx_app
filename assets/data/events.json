@@ -1,0 +1,234 @@
+{
+    "January": [
+    {
+    "Date": 5,
+    "Event": "Piers Road Run",
+    "Start Time": 0.25,
+    "Distances": "5K, 10K, 15K",
+    "Venue": "Garfunkels Grill"
+    },
+    {
+    "Date": 12,
+    "Event": "HAC Member Training Run",
+    "Start Time": 0.25,
+    "Distances": "10K, 21K",
+    "Venue": "Old Georgian's Sports Club"
+    },
+    {
+    "Date": 26,
+    "Event": "Nyaradzo Memorial Run",
+    "Start Time": 0.25,
+    "Distances": "10K, 21K, 32K",
+    "Venue": "Old Georgian's Sports Club"
+    }
+    ],
+    "February": [
+    {
+    "Date": 9,
+    "Event": "Old Mutual Harare Marathon",
+    "Start Time": 0.22916666666666666,
+    "Distances": "5K, 10K, 21K, 42K",
+    "Venue": "Old Georgian's Sports Club"
+    },
+    {
+    "Date": 23,
+    "Event": "Maxtiles HAC 21km Challenge",
+    "Start Time": 0.25,
+    "Distances": "10K, 21K",
+    "Venue": "Old Georgian's Sports Club"
+    }
+    ],
+    "March": [
+    {
+    "Date": 2,
+    "Event": "CBZ Peter Gradwell Marathon",
+    "Start Time": 0.22916666666666666,
+    "Distances": "10K, 21K, 42K",
+    "Venue": "Old Georgian's Sports Club"
+    },
+    {
+    "Date": 9,
+    "Event": "Troutbeck Worlds View",
+    "Start Time": 0.3333333333333333,
+    "Distances": "9K, 18K",
+    "Venue": "Troutbeck Hotel"
+    },
+    {
+    "Date": 23,
+    "Event": "HAC 7 Hills",
+    "Start Time": 0.25,
+    "Distances": "12K, 19K",
+    "Venue": "Greystone Park Shops"
+    }
+    ],
+    "April": [
+    {
+    "Date": 5,
+    "Event": "Totalsports Two Oceans Ultra Marathon",
+    "Start Time": 0.20833333333333334,
+    "Distances": "56K",
+    "Venue": "Cape Town South Africa"
+    },
+    {
+    "Date": 6,
+    "Event": "Totalsports Two Oceans Half Marathon",
+    "Start Time": 0.20833333333333334,
+    "Distances": "21K",
+    "Venue": "Cape Town South Africa"
+    }
+    ],
+    "May": [
+    {
+    "Date": 4,
+    "Event": "HAC Comrades Marathon Training Run",
+    "Start Time": 0.22916666666666666,
+    "Distances": "65K",
+    "Venue": "Old Georgian's Sports Club"
+    },
+    {
+    "Date": 18,
+    "Event": "Roger Brackley Half Marathon",
+    "Start Time": 0.2708333333333333,
+    "Distances": "5K, 10K, 21K",
+    "Venue": "Old Georgian's Sports Club"
+    },
+    {
+    "Date": 25,
+    "Event": "HAC Orange Grove Run",
+    "Start Time": 0.2708333333333333,
+    "Distances": "5K, 10K, 16K",
+    "Venue": "Highlands Sports Club"
+    }
+    ],
+    "June": [
+    {
+    "Date": 1,
+    "Event": "Zuva Half Marathon",
+    "Start Time": 0.2708333333333333,
+    "Distances": "10K, 21K",
+    "Venue": "Old Georgian's Sports Club"
+    },
+    {
+    "Date": 8,
+    "Event": "Comrades Marathon Down Run",
+    "Start Time": 0.22916666666666666,
+    "Distances": "90K",
+    "Venue": "Pietermaritzburg South Africa"
+    }
+    ],
+    "July": [
+    {
+    "Date": 6,
+    "Event": "Econet Vic Falls Marathon",
+    "Start Time": 0.25,
+    "Distances": "7.5K, 21K, 42K",
+    "Venue": "Victoria Falls"
+    },
+    {
+    "Date": 13,
+    "Event": "Chishawasha Cross Country",
+    "Start Time": 0.2916666666666667,
+    "Distances": "8K, 16K",
+    "Venue": "Mothercare Chishawasha"
+    },
+    {
+    "Date": 27,
+    "Event": "HAC Run",
+    "Start Time": 0.2708333333333333,
+    "Distances": "5K, 10K, 21K",
+    "Venue": "Old Georgian's Sports Club"
+    }
+    ],
+    "August": [
+    {
+    "Date": 3,
+    "Event": "Beatrice Cross Country",
+    "Start Time": 0.2916666666666667,
+    "Distances": "8K, 16K",
+    "Venue": "Beatrice Country Club"
+    },
+    {
+    "Date": 10,
+    "Event": "Kariba Half Marathon",
+    "Start Time": 0.25,
+    "Distances": "10K, 21K",
+    "Venue": "Kariba"
+    }
+    ],
+    "September": [
+    {
+    "Date": 7,
+    "Event": "My Trees Cross Country",
+    "Start Time": 0.25,
+    "Distances": "10K, 18K",
+    "Venue": "Mazowe Botanical Gardens"
+    },
+    {
+    "Date": 21,
+    "Event": "HAC Half Marathon",
+    "Start Time": 0.25,
+    "Distances": "10K, 21K",
+    "Venue": "TBA"
+    }
+    ],
+    "October": [
+    {
+    "Date": 12,
+    "Event": "HAC Three Bridges",
+    "Start Time": 0.25,
+    "Distances": "5K, 10K, 22K",
+    "Venue": "Greystone Park Shops"
+    },
+    {
+    "Date": 26,
+    "Event": "Vumba Half Marathon",
+    "Start Time": 0.25,
+    "Distances": "5K, 10K, 21K",
+    "Venue": "Vumba"
+    }
+    ],
+    "November": [
+    {
+    "Date": 2,
+    "Event": "Greendale Half Marathon",
+    "Start Time": 0.25,
+    "Distances": "11K, 21K",
+    "Venue": "Highlands Sports Club"
+    },
+    {
+    "Date": 9,
+    "Event": "First Mutual Marathon",
+    "Start Time": 0.22916666666666666,
+    "Distances": "5K, 10K,21K, 42K",
+    "Venue": "Old Georgian's Sports Club"
+    },
+    {
+    "Date": 23,
+    "Event": "HAC Handicap",
+    "Start Time": 0.25,
+    "Distances": "21K",
+    "Venue": "Old Georgian's Sports Club"
+    },
+    {
+    "Date": 28,
+    "Event": "HAC Awards Dinner",
+    "Start Time": ""
+    }
+    ],
+    "December": [
+    {
+    "Date": 7,
+    "Event": "HAC 20 Miler",
+    "Start Time": 0.22916666666666666,
+    "Distances": "16K, 32K",
+    "Venue": "Shamva Road"
+    },
+    {
+    "Date": 18,
+    "Event": "Jog & Grog- Members Only",
+    "Start Time": 0.7708333333333334,
+    "Distances": "5K",
+    "Venue": "Old Georgian's Sports Club"
+    }
+    ]
+    }
