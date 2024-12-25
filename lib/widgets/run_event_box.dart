@@ -8,10 +8,10 @@ class RunEventBox extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.only(left: 20),
+      padding: const EdgeInsets.only(left: 20, top: 20),
       child: Container(
         color: AppColor.tileColor,
-        width: AppMeasure.width / 1.2,
+        width: AppMeasure.width,
         height: AppMeasure.height / 5,
         padding: EdgeInsets.all(20),
         child: Column(
