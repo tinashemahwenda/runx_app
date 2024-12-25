@@ -1,14 +1,47 @@
+import 'dart:convert';
+
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:runx_app/constants/app_constants.dart';
+import 'package:runx_app/models/events.dart';
 import 'package:runx_app/screens/event_page.dart';
 import 'package:runx_app/widgets/run_event_box.dart';
 import 'package:runx_app/widgets/training_plan_box.dart';
 import '../widgets/view_calendar_box.dart';
 
-class HomePage extends StatelessWidget {
+class HomePage extends StatefulWidget {
   const HomePage({super.key});
 
   @override
+  State<HomePage> createState() => _HomePageState();
+}
+
+class _HomePageState extends State<HomePage> {
+  List<MonthlyRaceData> _races = [];
+  @override
+  void initState() {
+    super.initState();
+    _loadJsonData();
+  }
+
+  Future<void> _loadJsonData() async {
+    try {
+      String jsonString =
+          await rootBundle.loadString('assets/data/events.json');
+      List<dynamic> jsonData = jsonDecode(jsonString);
+
+      List<MonthlyRaceData> races =
+          jsonData.map((data) => MonthlyRaceData.fromJson(data)).toList();
+
+      setState(() {
+        _races = races;
+        print(_races);
+      });
+    } catch (e) {
+      print('Error in loading data $e');
+    }
+  }
+
   Widget build(BuildContext context) {
     return Scaffold(
         backgroundColor: AppColor.backgroundColor,
