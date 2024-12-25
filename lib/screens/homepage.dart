@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:runx_app/constants/app_constants.dart';
+import 'package:runx_app/screens/event_page.dart';
 import 'package:runx_app/widgets/run_event_box.dart';
 import 'package:runx_app/widgets/training_plan_box.dart';
 import '../widgets/view_calendar_box.dart';
@@ -47,7 +48,7 @@ class HomePage extends StatelessWidget {
                     CircleAvatar(
                       backgroundColor: AppColor.tileColor,
                       child: Icon(
-                        Icons.notifications,
+                        Icons.bookmark,
                         color: AppColor.limeGreen,
                       ),
                     )
@@ -71,12 +72,19 @@ class HomePage extends StatelessWidget {
                         fontSize: 25,
                       ),
                     ),
-                    Text(
-                      'View All',
-                      style: TextStyle(
-                        fontSize: 12,
-                        color: AppColor.limeGreen,
-                        decoration: TextDecoration.underline,
+                    GestureDetector(
+                      onTap: () => Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => EventPage(),
+                          )),
+                      child: Text(
+                        'View All',
+                        style: TextStyle(
+                          fontSize: 12,
+                          color: AppColor.limeGreen,
+                          decoration: TextDecoration.underline,
+                        ),
                       ),
                     )
                   ],
