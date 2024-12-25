@@ -11,15 +11,15 @@ class EventPage extends StatelessWidget {
     return Scaffold(
       backgroundColor: AppColor.backgroundColor,
       body: SingleChildScrollView(
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            SizedBox(
-              height: 60,
-            ),
-            Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 20),
-              child: Row(
+        child: Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 20),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              SizedBox(
+                height: 60,
+              ),
+              Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   GestureDetector(
@@ -54,34 +54,34 @@ class EventPage extends StatelessWidget {
                   )
                 ],
               ),
-            ),
-            SizedBox(
-              height: 20,
-            ),
-            Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 20),
-              child: Text(
-                'January 2025',
-                style: TextStyle(
-                  color: AppColor.fontColor,
-                  fontSize: 18,
-                  fontWeight: FontWeight.bold,
+              SizedBox(
+                height: 20,
+              ),
+              Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 20),
+                child: Text(
+                  'January 2025',
+                  style: TextStyle(
+                    color: AppColor.fontColor,
+                    fontSize: 18,
+                    fontWeight: FontWeight.bold,
+                  ),
                 ),
               ),
-            ),
-            SizedBox(
-              height: 20,
-            ),
-            RunEventBox(),
-            RunEventBox(),
-            RunEventBox(),
-            RunEventBox(),
-            RunEventBox(),
-            RunEventBox(),
-            RunEventBox(),
-            RunEventBox(),
-            RunEventBox(),
-          ],
+              SizedBox(
+                height: 20,
+              ),
+              RunEventBox(),
+              RunEventBox(),
+              RunEventBox(),
+              RunEventBox(),
+              RunEventBox(),
+              RunEventBox(),
+              RunEventBox(),
+              RunEventBox(),
+              RunEventBox(),
+            ],
+          ),
         ),
       ),
     );
