@@ -17,28 +17,28 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
-  List<MonthlyRaceData> _races = [];
+  List<Race> _racesData = [];
+
   @override
   void initState() {
     super.initState();
-    _loadJsonData();
+    _loadData();
   }
 
-  Future<void> _loadJsonData() async {
+  Future<void> _loadData() async {
     try {
       String jsonString =
           await rootBundle.loadString('assets/data/events.json');
       List<dynamic> jsonData = jsonDecode(jsonString);
-
-      List<MonthlyRaceData> races =
-          jsonData.map((data) => MonthlyRaceData.fromJson(data)).toList();
+      List<Race> raceData =
+          jsonData.map((data) => Race.fromJson(data)).toList();
 
       setState(() {
-        _races = races;
-        print(_races);
+        _racesData = raceData;
+        print(_racesData);
       });
     } catch (e) {
-      print('Error in loading data $e');
+      print('Error loading data: $e');
     }
   }
 
@@ -120,16 +120,6 @@ class _HomePageState extends State<HomePage> {
                         ),
                       ),
                     )
-                  ],
-                ),
-              ),
-              SingleChildScrollView(
-                scrollDirection: Axis.horizontal,
-                child: Row(
-                  children: [
-                    RunEventBox(),
-                    RunEventBox(),
-                    RunEventBox(),
                   ],
                 ),
               ),
