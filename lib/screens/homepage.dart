@@ -1,3 +1,5 @@
+// ignore_for_file: unused_field
+
 import 'dart:convert';
 
 import 'package:flutter/material.dart';
@@ -5,7 +7,7 @@ import 'package:flutter/services.dart';
 import 'package:runx_app/constants/app_constants.dart';
 import 'package:runx_app/models/events.dart';
 import 'package:runx_app/screens/event_page.dart';
-import 'package:runx_app/widgets/run_event_box.dart';
+//import 'package:runx_app/widgets/run_event_box.dart';
 import 'package:runx_app/widgets/training_plan_box.dart';
 import '../widgets/view_calendar_box.dart';
 
@@ -17,7 +19,7 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
-  List<Race> _racesData = [];
+  List<RaceEvent> _raceEvents = [];
 
   @override
   void initState() {
@@ -30,15 +32,16 @@ class _HomePageState extends State<HomePage> {
       String jsonString =
           await rootBundle.loadString('assets/data/events.json');
       List<dynamic> jsonData = jsonDecode(jsonString);
-      List<Race> raceData =
-          jsonData.map((data) => Race.fromJson(data)).toList();
+
+      List<RaceEvent> raceEvents =
+          jsonData.map((data) => RaceEvent.fromJson(data)).toList();
 
       setState(() {
-        _racesData = raceData;
-        print(_racesData);
+        _raceEvents = raceEvents;
+        print(raceEvents[0].event);
       });
     } catch (e) {
-      print('Error loading data: $e');
+      print('Error in loading data $e');
     }
   }
 
