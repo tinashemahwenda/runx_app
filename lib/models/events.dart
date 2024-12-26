@@ -1,62 +1,22 @@
-import 'dart:convert';
-
-class Race {
-  final int date;
+class RaceEvent {
   final String event;
-  final String startTime;
-  final List<String> distances;
+  final String distances;
+  final String date;
   final String venue;
 
-  Race({
-    required this.date,
+  RaceEvent({
     required this.event,
-    required this.startTime,
-    required this.distances,
     required this.venue,
+    required this.distances,
+    required this.date,
   });
 
-  factory Race.fromJson(Map<String, dynamic> json) => Race(
-        date: json['Date'],
-        event: json['Event'],
-        startTime: json['Start Time'].toString(),
-        distances: (json['Distances'] as String)
-            .split(',')
-            .map((e) => e.trim())
-            .toList(),
-        venue: json['Venue'],
-      );
-}
-
-class MonthlyRaces {
-  final String month;
-  final List<Race> races;
-
-  MonthlyRaces({
-    required this.month,
-    required this.races,
-  });
-
-  factory MonthlyRaces.fromJson(String month, List<dynamic> json) =>
-      MonthlyRaces(
-        month: month,
-        races: json.map((x) => Race.fromJson(x)).toList(),
-      );
-}
-
-class RaceData {
-  final Map<String, MonthlyRaces> racesByMonth;
-
-  RaceData({
-    required this.racesByMonth,
-  });
-
-  factory RaceData.fromJson(Map<String, dynamic> json) => RaceData(
-        racesByMonth: json.map((key, value) =>
-            MapEntry(key, MonthlyRaces.fromJson(key, value as List<dynamic>))),
-      );
-}
-
-List<Race> parseRaces(String jsonData) {
-  final parsed = json.decode(jsonData).cast<Map<String, dynamic>>();
-  return parsed.map<Race>((json) => Race.fromJson(json)).toList();
+  factory RaceEvent.fromJson(Map<String, dynamic> json) {
+    return RaceEvent(
+      event: json['event'],
+      venue: json['venue'],
+      distances: json['distances'],
+      date: json['date'],
+    );
+  }
 }
