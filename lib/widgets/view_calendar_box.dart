@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:runx_app/screens/event_page.dart';
 import 'package:runx_app/widgets/view_all_button.dart';
 
 import '../constants/app_constants.dart';
@@ -33,15 +32,8 @@ class ViewCalendarBox extends StatelessWidget {
                 ),
               ),
             ),
-            GestureDetector(
-              onTap: () => Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (context) => EventPage(),
-                  )),
-              child: ViewAllButton(
-                buttonText: 'View Full Calendar',
-              ),
+            ViewAllButton(
+              buttonText: 'View Full Calendar',
             )
           ],
         ),
