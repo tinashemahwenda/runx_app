@@ -13,7 +13,7 @@ class RunEventBox extends StatelessWidget {
         color: AppColor.tileColor,
         width: AppMeasure.width,
         height: AppMeasure.height / 5,
-        padding: EdgeInsets.all(20),
+        padding: EdgeInsets.all(10),
         child: Column(
           children: [
             Row(
