@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:runx_app/models/events.dart';
 import 'package:runx_app/widgets/run_event_box.dart';
 
 import '../constants/app_constants.dart';
 
 class EventPage extends StatelessWidget {
-  const EventPage({super.key});
+  final List<RaceEvent> event;
+  const EventPage({super.key, required this.event});
 
   @override
   Widget build(BuildContext context) {
@@ -57,7 +59,7 @@ class EventPage extends StatelessWidget {
               SizedBox(
                 height: 20,
               ),
-              Padding(
+              /* Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 20),
                 child: Text(
                   'January 2025',
@@ -67,7 +69,7 @@ class EventPage extends StatelessWidget {
                     fontWeight: FontWeight.bold,
                   ),
                 ),
-              ),
+              ),*/
               SizedBox(
                 height: 20,
               ),
