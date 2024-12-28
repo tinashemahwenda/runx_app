@@ -19,7 +19,7 @@ class RunEventBox extends StatelessWidget {
       padding: const EdgeInsets.only(left: 20, top: 20),
       child: Container(
         color: AppColor.tileColor,
-        width: AppMeasure.width,
+        width: AppMeasure.width / 1.4,
         height: AppMeasure.height / 5,
         padding: EdgeInsets.all(10),
         child: Column(
@@ -45,12 +45,15 @@ class RunEventBox extends StatelessWidget {
                     Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Text(
-                          raceTitle,
-                          style: TextStyle(
-                            fontSize: 22,
-                            fontWeight: FontWeight.bold,
-                            color: AppColor.limeGreen,
+                        Container(
+                          width: AppMeasure.width / 2.2,
+                          child: Text(
+                            raceTitle,
+                            style: TextStyle(
+                              fontSize: 22,
+                              fontWeight: FontWeight.bold,
+                              color: AppColor.limeGreen,
+                            ),
                           ),
                         ),
                         Text(
