@@ -7,6 +7,7 @@ import 'package:flutter/services.dart';
 import 'package:runx_app/constants/app_constants.dart';
 import 'package:runx_app/models/events.dart';
 import 'package:runx_app/screens/event_page.dart';
+import 'package:runx_app/widgets/run_event_box.dart';
 //import 'package:runx_app/widgets/run_event_box.dart';
 import 'package:runx_app/widgets/training_plan_box.dart';
 import '../widgets/view_calendar_box.dart';
@@ -125,6 +126,9 @@ class _HomePageState extends State<HomePage> {
                     )
                   ],
                 ),
+              ),
+              SizedBox(
+                child: RunEventBox(),
               ),
               Padding(
                 padding: const EdgeInsets.all(20.0),
