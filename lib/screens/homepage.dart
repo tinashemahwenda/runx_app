@@ -39,7 +39,7 @@ class _HomePageState extends State<HomePage> {
 
       setState(() {
         _raceEvents = raceEvents;
-        print(_raceEvents);
+        print(_raceEvents.length);
       });
     } catch (e) {
       print('Error in loading data $e');
@@ -113,7 +113,9 @@ class _HomePageState extends State<HomePage> {
                       onTap: () => Navigator.push(
                           context,
                           MaterialPageRoute(
-                            builder: (context) => EventPage(),
+                            builder: (context) => EventPage(
+                              event: _raceEvents,
+                            ),
                           )),
                       child: Text(
                         'View All',
@@ -131,11 +133,19 @@ class _HomePageState extends State<HomePage> {
                 height: 200,
                 child: ListView.builder(
                   scrollDirection: Axis.horizontal,
-                  itemCount: _raceEvents.length,
-                  itemBuilder: (context, index) => RunEventBox(
-                      raceTitle: _raceEvents[index].event,
-                      raceLocation: _raceEvents[index].venue,
-                      raceDate: _raceEvents[index].date),
+                  itemCount: 4,
+                  itemBuilder: (context, index) {
+                    if (index < _raceEvents.length) {
+                      final race = _raceEvents[index];
+                      return RunEventBox(
+                        raceTitle: race.event,
+                        raceLocation: race.venue,
+                        raceDate: race.date,
+                      );
+                    } else {
+                      return SizedBox();
+                    }
+                  },
                 ),
               ),
               Padding(
