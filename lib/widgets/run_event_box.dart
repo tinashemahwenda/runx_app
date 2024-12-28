@@ -3,7 +3,15 @@ import 'package:flutter/material.dart';
 import '../constants/app_constants.dart';
 
 class RunEventBox extends StatelessWidget {
-  const RunEventBox({super.key});
+  final String raceTitle;
+  final String raceLocation;
+  final String raceDate;
+  const RunEventBox({
+    super.key,
+    required this.raceTitle,
+    required this.raceLocation,
+    required this.raceDate,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -38,7 +46,7 @@ class RunEventBox extends StatelessWidget {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Text(
-                          'PIERS ROAD RUN',
+                          raceTitle,
                           style: TextStyle(
                             fontSize: 22,
                             fontWeight: FontWeight.bold,
@@ -46,7 +54,7 @@ class RunEventBox extends StatelessWidget {
                           ),
                         ),
                         Text(
-                          'Gerfunkels Grill',
+                          raceLocation,
                           style: TextStyle(
                             fontSize: 12,
                             fontWeight: FontWeight.bold,
@@ -74,7 +82,7 @@ class RunEventBox extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Text(
-                  '05/01/2025',
+                  raceDate,
                   style: TextStyle(
                     color: AppColor.fontColor,
                   ),
