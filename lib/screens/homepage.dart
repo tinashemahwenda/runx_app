@@ -39,7 +39,7 @@ class _HomePageState extends State<HomePage> {
 
       setState(() {
         _raceEvents = raceEvents;
-        print(raceEvents[0].event);
+        print(_raceEvents);
       });
     } catch (e) {
       print('Error in loading data $e');
@@ -128,7 +128,15 @@ class _HomePageState extends State<HomePage> {
                 ),
               ),
               SizedBox(
-                child: RunEventBox(),
+                height: 200,
+                child: ListView.builder(
+                  scrollDirection: Axis.horizontal,
+                  itemCount: _raceEvents.length,
+                  itemBuilder: (context, index) => RunEventBox(
+                      raceTitle: _raceEvents[index].event,
+                      raceLocation: _raceEvents[index].venue,
+                      raceDate: _raceEvents[index].date),
+                ),
               ),
               Padding(
                 padding: const EdgeInsets.all(20.0),
