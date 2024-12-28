@@ -95,7 +95,10 @@ class _HomePageState extends State<HomePage> {
               SizedBox(
                 height: 30,
               ),
-              ViewCalendarBox(),
+              GestureDetector(
+                  onTap: () => MaterialPageRoute(
+                      builder: (context) => EventPage(event: _raceEvents)),
+                  child: ViewCalendarBox()),
               Padding(
                 padding: const EdgeInsets.all(20.0),
                 child: Row(
