@@ -35,7 +35,7 @@ class TrainingPlanBox extends StatelessWidget {
                         distanceLength,
                         style: TextStyle(
                           fontWeight: FontWeight.bold,
-                          fontSize: 90,
+                          fontSize: 80,
                           color: AppColor.fontColor,
                         ),
                       ),
