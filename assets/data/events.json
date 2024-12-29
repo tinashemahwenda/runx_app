@@ -36,7 +36,7 @@
     },
     {
     "Date": "2/03/2025",
-    "Event": "CBZ Peter Gradwell Marathon",
+    "Event": "CBZ Peter Gradwell",
     "Start Time": "0.22916666666666666",
     "Distances": "10K, 21K, 42K",
     "Venue": "Old Georgian's Sports Club"
@@ -57,21 +57,21 @@
     },
     {
     "Date": "5/04/2025",
-    "Event": "Totalsports Two Oceans Ultra Marathon",
+    "Event": "Two Oceans Ultra",
     "Start Time": "0.20833333333333334",
     "Distances": "56K",
     "Venue": "Cape Town South Africa"
     },
     {
     "Date": "6/04/2025",
-    "Event": "Totalsports Two Oceans Half Marathon",
+    "Event": "Two Oceans Half Marathon",
     "Start Time": "0.20833333333333334",
     "Distances": "21K",
     "Venue": "Cape Town South Africa"
     },
     {
     "Date": "4/05/2025",
-    "Event": "HAC Comrades Marathon Training Run",
+    "Event": "HAC Comrades Marathon",
     "Start Time": "0.22916666666666666",
     "Distances": "65K",
     "Venue": "Old Georgian's Sports Club"
@@ -99,7 +99,7 @@
     },
     {
     "Date": "8/06/2025",
-    "Event": "Comrades Marathon Down Run",
+    "Event": "Comrades Marathon",
     "Start Time":" 0.22916666666666666",
     "Distances": "90K",
     "Venue": "Pietermaritzburg South Africa"
