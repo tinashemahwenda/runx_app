@@ -96,8 +96,10 @@ class _HomePageState extends State<HomePage> {
                 height: 30,
               ),
               GestureDetector(
-                  onTap: () => MaterialPageRoute(
-                      builder: (context) => EventPage(event: _raceEvents)),
+                  onTap: () => Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => EventPage(event: _raceEvents))),
                   child: ViewCalendarBox()),
               Padding(
                 padding: const EdgeInsets.all(20.0),
@@ -133,7 +135,7 @@ class _HomePageState extends State<HomePage> {
                 ),
               ),
               SizedBox(
-                height: 200,
+                height: AppMeasure.height / 4,
                 child: ListView.builder(
                   scrollDirection: Axis.horizontal,
                   itemCount: 4,
