@@ -20,16 +20,19 @@ class RunEventBox extends StatelessWidget {
       child: Container(
         color: AppColor.tileColor,
         width: AppMeasure.width / 1.4,
-        height: AppMeasure.height / 5,
-        padding: EdgeInsets.all(10),
+        height: AppMeasure.height / 4.5,
+        padding: EdgeInsets.symmetric(vertical: 5, horizontal: 20),
         child: Column(
           children: [
+            SizedBox(
+              height: 20,
+            ),
             Row(
               children: [
                 Row(
                   children: [
                     Container(
-                      padding: EdgeInsets.all(10),
+                      padding: EdgeInsets.all(5),
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(10),
                         color: AppColor.limeGreen,
