@@ -18,139 +18,135 @@ class RunEventBox extends StatelessWidget {
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.only(left: 20, top: 20),
-      child: GestureDetector(
-        onTap: () => Navigator.push(context,
-            MaterialPageRoute(builder: (context) => EventDetailsPage())),
-        child: Container(
-          color: AppColor.tileColor,
-          width: AppMeasure.width / 1.4,
-          height: AppMeasure.height / 4.5,
-          padding: EdgeInsets.symmetric(vertical: 5, horizontal: 20),
-          child: Column(
-            children: [
-              SizedBox(
-                height: 20,
-              ),
-              Row(
-                children: [
-                  Row(
-                    children: [
-                      Container(
-                        padding: EdgeInsets.all(5),
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(10),
-                          color: AppColor.limeGreen,
-                        ),
-                        child: Image.asset(
-                          'assets/images/circuit.png',
-                          width: AppMeasure.width / 10,
-                        ),
+      child: Container(
+        color: AppColor.tileColor,
+        width: AppMeasure.width / 1.4,
+        height: AppMeasure.height / 4.5,
+        padding: EdgeInsets.symmetric(vertical: 5, horizontal: 20),
+        child: Column(
+          children: [
+            SizedBox(
+              height: 20,
+            ),
+            Row(
+              children: [
+                Row(
+                  children: [
+                    Container(
+                      padding: EdgeInsets.all(5),
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(10),
+                        color: AppColor.limeGreen,
                       ),
-                      SizedBox(
-                        width: 10,
+                      child: Image.asset(
+                        'assets/images/circuit.png',
+                        width: AppMeasure.width / 10,
                       ),
-                      Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Container(
-                            width: AppMeasure.width / 2.2,
-                            child: Text(
-                              raceTitle,
-                              style: TextStyle(
-                                fontSize: 22,
-                                fontWeight: FontWeight.bold,
-                                color: AppColor.limeGreen,
-                              ),
-                            ),
-                          ),
-                          Text(
-                            raceLocation,
-                            style: TextStyle(
-                              fontSize: 12,
-                              fontWeight: FontWeight.bold,
-                              color: AppColor.fontColor,
-                            ),
-                          )
-                        ],
-                      )
-                    ],
-                  ),
-                ],
-              ),
-              SizedBox(
-                height: 30,
-              ),
-              Divider(
-                color: AppColor.fontColor,
-                height: 1,
-                thickness: 1,
-              ),
-              SizedBox(
-                height: 10,
-              ),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  Text(
-                    raceDate,
-                    style: TextStyle(
-                      color: AppColor.fontColor,
                     ),
+                    SizedBox(
+                      width: 10,
+                    ),
+                    Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Container(
+                          width: AppMeasure.width / 2.2,
+                          child: Text(
+                            raceTitle,
+                            style: TextStyle(
+                              fontSize: 22,
+                              fontWeight: FontWeight.bold,
+                              color: AppColor.limeGreen,
+                            ),
+                          ),
+                        ),
+                        Text(
+                          raceLocation,
+                          style: TextStyle(
+                            fontSize: 12,
+                            fontWeight: FontWeight.bold,
+                            color: AppColor.fontColor,
+                          ),
+                        )
+                      ],
+                    )
+                  ],
+                ),
+              ],
+            ),
+            SizedBox(
+              height: 30,
+            ),
+            Divider(
+              color: AppColor.fontColor,
+              height: 1,
+              thickness: 1,
+            ),
+            SizedBox(
+              height: 10,
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Text(
+                  raceDate,
+                  style: TextStyle(
+                    color: AppColor.fontColor,
                   ),
-                  Row(
-                    spacing: 5,
-                    children: [
-                      Container(
-                        padding: EdgeInsets.all(5),
-                        decoration: BoxDecoration(
-                            border: Border.all(
-                              color: AppColor.fontColor,
-                              width: 1,
-                            ),
-                            borderRadius: BorderRadius.circular(10)),
-                        child: Text(
-                          '5K',
-                          style: TextStyle(
+                ),
+                Row(
+                  spacing: 5,
+                  children: [
+                    Container(
+                      padding: EdgeInsets.all(5),
+                      decoration: BoxDecoration(
+                          border: Border.all(
                             color: AppColor.fontColor,
+                            width: 1,
                           ),
+                          borderRadius: BorderRadius.circular(10)),
+                      child: Text(
+                        '5K',
+                        style: TextStyle(
+                          color: AppColor.fontColor,
                         ),
                       ),
-                      Container(
-                        padding: EdgeInsets.all(5),
-                        decoration: BoxDecoration(
-                            border: Border.all(
-                              color: AppColor.fontColor,
-                              width: 1,
-                            ),
-                            borderRadius: BorderRadius.circular(10)),
-                        child: Text(
-                          '10K',
-                          style: TextStyle(
+                    ),
+                    Container(
+                      padding: EdgeInsets.all(5),
+                      decoration: BoxDecoration(
+                          border: Border.all(
                             color: AppColor.fontColor,
+                            width: 1,
                           ),
+                          borderRadius: BorderRadius.circular(10)),
+                      child: Text(
+                        '10K',
+                        style: TextStyle(
+                          color: AppColor.fontColor,
                         ),
                       ),
-                      Container(
-                        padding: EdgeInsets.all(5),
-                        decoration: BoxDecoration(
-                            border: Border.all(
-                              color: AppColor.fontColor,
-                              width: 1,
-                            ),
-                            borderRadius: BorderRadius.circular(10)),
-                        child: Text(
-                          '15K',
-                          style: TextStyle(
+                    ),
+                    Container(
+                      padding: EdgeInsets.all(5),
+                      decoration: BoxDecoration(
+                          border: Border.all(
                             color: AppColor.fontColor,
+                            width: 1,
                           ),
+                          borderRadius: BorderRadius.circular(10)),
+                      child: Text(
+                        '15K',
+                        style: TextStyle(
+                          color: AppColor.fontColor,
                         ),
                       ),
-                    ],
-                  )
-                ],
-              )
-            ],
-          ),
+                    ),
+                  ],
+                )
+              ],
+            )
+          ],
         ),
       ),
     );
