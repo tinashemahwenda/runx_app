@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:runx_app/models/events.dart';
 
 import '../constants/app_constants.dart';
 
 class EventDetailsPage extends StatelessWidget {
-  const EventDetailsPage({super.key});
+  final RaceEvent data;
+  EventDetailsPage({super.key, required this.data});
 
   @override
   Widget build(BuildContext context) {
