@@ -8,12 +8,16 @@ class EventDetailsPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: AppColor.backgroundColor,
       body: Column(
         children: [
           SizedBox(
             width: AppMeasure.width,
             height: AppMeasure.height / 2,
-            child: Image.asset('assets/images/event-bg.png'),
+            child: Image.asset(
+              'assets/images/event-bg.png',
+              fit: BoxFit.cover,
+            ),
           )
         ],
       ),
