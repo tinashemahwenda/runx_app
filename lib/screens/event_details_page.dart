@@ -4,7 +4,7 @@ import 'package:runx_app/models/events.dart';
 import '../constants/app_constants.dart';
 
 class EventDetailsPage extends StatelessWidget {
-  final RaceEvent data;
+  final List<RaceEvent> data;
   EventDetailsPage({super.key, required this.data});
 
   @override
