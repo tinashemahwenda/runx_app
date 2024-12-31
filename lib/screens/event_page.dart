@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:runx_app/models/events.dart';
+import 'package:runx_app/screens/event_details_page.dart';
 import 'package:runx_app/widgets/run_event_box.dart';
 
 import '../constants/app_constants.dart';
@@ -77,10 +78,17 @@ class EventPage extends StatelessWidget {
                 itemBuilder: (context, index) {
                   if (index < event.length) {
                     final race = event[index];
-                    return RunEventBox(
-                      raceTitle: race.event,
-                      raceLocation: race.venue,
-                      raceDate: race.date,
+                    return GestureDetector(
+                      onTap: () => Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) =>
+                                  EventDetailsPage(data: event))),
+                      child: RunEventBox(
+                        raceTitle: race.event,
+                        raceLocation: race.venue,
+                        raceDate: race.date,
+                      ),
                     );
                   } else {
                     return SizedBox(
