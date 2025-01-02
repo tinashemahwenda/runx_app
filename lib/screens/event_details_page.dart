@@ -38,18 +38,18 @@ class EventDetailsPage extends StatelessWidget {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         SizedBox(
-                          height: AppMeasure.height / 2.8,
+                          height: AppMeasure.height / 2.5,
                         ),
                         Text(
-                          'Piers Road Run',
+                          data[1].event,
                           style: TextStyle(
-                            fontSize: 40,
+                            fontSize: 20,
                             fontWeight: FontWeight.bold,
                             color: AppColor.limeGreen,
                           ),
                         ),
                         Text(
-                          'Gerfunkels Grill | 05/01/2025',
+                          data[1].venue,
                           style: TextStyle(
                             fontWeight: FontWeight.bold,
                             color: AppColor.fontColor,
