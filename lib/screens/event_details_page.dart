@@ -29,16 +29,19 @@ class EventDetailsPage extends StatelessWidget {
                   height: AppMeasure.height / 2,
                   color: Colors.black54,
                 ),
-                Padding(
-                  padding: const EdgeInsets.only(top: 60.0, left: 30),
-                  child: ClipRRect(
-                    borderRadius: BorderRadius.circular(50),
-                    child: Container(
-                      padding: EdgeInsets.all(10),
-                      color: AppColor.tileColor,
-                      child: Icon(
-                        Icons.arrow_back_ios_new,
-                        color: AppColor.limeGreen,
+                GestureDetector(
+                  onTap: () => Navigator.pop(context),
+                  child: Padding(
+                    padding: const EdgeInsets.only(top: 60.0, left: 30),
+                    child: ClipRRect(
+                      borderRadius: BorderRadius.circular(50),
+                      child: Container(
+                        padding: EdgeInsets.all(10),
+                        color: AppColor.tileColor,
+                        child: Icon(
+                          Icons.arrow_back_ios_new,
+                          color: AppColor.limeGreen,
+                        ),
                       ),
                     ),
                   ),
