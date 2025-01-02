@@ -64,7 +64,7 @@ class EventDetailsPage extends StatelessWidget {
             Padding(
               padding: const EdgeInsets.all(20.0),
               child: Text(
-                "Whether you're an experienced runner or just getting started, this event offers a fun and supportive environment for all fitness levels. With scenic routes, enthusiastic participants, and a chance to challenge yourself, it's the perfect opportunity to get moving, set personal goals, and enjoy the great outdoors. Participants will receive a race medal and a goody bag, with prizes for top finishers in various categories",
+                'This is a ${data[1].event} held at ${data[1].venue}. The event will start at ${data[1].startTime} with distances of ${data[1].distances}',
                 style: TextStyle(
                   color: AppColor.fontColor,
                   height: 2,
