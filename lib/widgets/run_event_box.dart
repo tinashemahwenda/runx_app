@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:runx_app/screens/event_details_page.dart';
 
 import '../constants/app_constants.dart';
 
