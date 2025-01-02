@@ -30,6 +30,13 @@ class EventDetailsPage extends StatelessWidget {
                   color: Colors.black54,
                 ),
                 Padding(
+                  padding: const EdgeInsets.all(30.0),
+                  child: Icon(
+                    Icons.arrow_back_ios_new,
+                    color: AppColor.fontColor,
+                  ),
+                ),
+                Padding(
                   padding: const EdgeInsets.all(20.0),
                   child: Container(
                     width: AppMeasure.width,
