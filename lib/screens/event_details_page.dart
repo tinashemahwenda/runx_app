@@ -31,9 +31,13 @@ class EventDetailsPage extends StatelessWidget {
                 ),
                 Padding(
                   padding: const EdgeInsets.only(top: 60.0, left: 30),
-                  child: Icon(
-                    Icons.arrow_back_ios_new,
+                  child: Container(
+                    padding: EdgeInsets.all(10),
                     color: AppColor.fontColor,
+                    child: Icon(
+                      Icons.arrow_back_ios_new,
+                      color: AppColor.fontColor,
+                    ),
                   ),
                 ),
                 Padding(
