@@ -81,7 +81,22 @@ class EventDetailsPage extends StatelessWidget {
             Padding(
               padding: const EdgeInsets.all(20.0),
               child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
+                  Container(
+                    padding: EdgeInsets.all(5),
+                    decoration: BoxDecoration(
+                        border: Border.all(
+                      color: AppColor.limeGreen,
+                    )),
+                    child: Text(
+                      'Time: 0800hrs',
+                      style: TextStyle(
+                        color: AppColor.fontColor,
+                        fontSize: 10,
+                      ),
+                    ),
+                  ),
                   Text(
                     'This is a ${data[1].event} held at ${data[1].venue}. The event will start at ${data[1].startTime} with distances of ${data[1].distances}',
                     style: TextStyle(
