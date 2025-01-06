@@ -85,10 +85,6 @@ class EventDetailsPage extends StatelessWidget {
                 children: [
                   Container(
                     padding: EdgeInsets.all(5),
-                    decoration: BoxDecoration(
-                        border: Border.all(
-                      color: AppColor.limeGreen,
-                    )),
                     child: Text(
                       'Time: 0800hrs',
                       style: TextStyle(
