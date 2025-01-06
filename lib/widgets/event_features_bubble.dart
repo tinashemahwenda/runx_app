@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import '../constants/app_constants.dart';
 
 class EventFeaturesBubble extends StatelessWidget {
-  final Icon bubbleIcon;
+  final IconData bubbleIcon;
   final String bubbleText;
   const EventFeaturesBubble(
       {super.key, required this.bubbleIcon, required this.bubbleText});
@@ -22,13 +22,13 @@ class EventFeaturesBubble extends StatelessWidget {
       child: Column(
         children: [
           Icon(
-            Icons.watch,
+            bubbleIcon,
             color: AppColor.limeGreen,
           ),
           Container(
             padding: EdgeInsets.all(5),
             child: Text(
-              '0800hrs',
+              bubbleText,
               style: TextStyle(
                 color: AppColor.fontColor,
                 fontSize: 12,
