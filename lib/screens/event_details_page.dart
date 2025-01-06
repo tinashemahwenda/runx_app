@@ -80,13 +80,17 @@ class EventDetailsPage extends StatelessWidget {
             ),
             Padding(
               padding: const EdgeInsets.all(20.0),
-              child: Text(
-                'This is a ${data[1].event} held at ${data[1].venue}. The event will start at ${data[1].startTime} with distances of ${data[1].distances}',
-                style: TextStyle(
-                  color: AppColor.fontColor,
-                  height: 2,
-                  fontSize: 16,
-                ),
+              child: Column(
+                children: [
+                  Text(
+                    'This is a ${data[1].event} held at ${data[1].venue}. The event will start at ${data[1].startTime} with distances of ${data[1].distances}',
+                    style: TextStyle(
+                      color: AppColor.fontColor,
+                      height: 2,
+                      fontSize: 16,
+                    ),
+                  ),
+                ],
               ),
             ),
             ClipRRect(
