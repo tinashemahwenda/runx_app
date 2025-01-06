@@ -170,6 +170,9 @@ class _HomePageState extends State<HomePage> {
                   children: [
                     TrainingPlanBox(distanceLength: '5K'),
                     TrainingPlanBox(distanceLength: '10K'),
+                    SizedBox(
+                      width: 20,
+                    )
                   ],
                 ),
               ),
