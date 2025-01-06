@@ -39,7 +39,6 @@ class _HomePageState extends State<HomePage> {
 
       setState(() {
         _raceEvents = raceEvents;
-        print(_raceEvents.length);
       });
     } catch (e) {
       print('Error in loading data $e');
