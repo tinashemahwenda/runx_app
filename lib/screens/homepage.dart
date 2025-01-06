@@ -1,9 +1,9 @@
 import 'dart:convert';
-
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:runx_app/constants/app_constants.dart';
 import 'package:runx_app/models/events.dart';
+import 'package:runx_app/screens/event_details_page.dart';
 import 'package:runx_app/screens/event_page.dart';
 import 'package:runx_app/widgets/run_event_box.dart';
 import 'package:runx_app/widgets/training_plan_box.dart';
@@ -138,10 +138,13 @@ class _HomePageState extends State<HomePage> {
                   itemBuilder: (context, index) {
                     if (index < _raceEvents.length) {
                       final race = _raceEvents[index];
-                      return RunEventBox(
-                        raceTitle: race.event,
-                        raceLocation: race.venue,
-                        raceDate: race.date,
+                      return GestureDetector(
+                        onTap: () => EventDetailsPage(data: _raceEvents),
+                        child: RunEventBox(
+                          raceTitle: race.event,
+                          raceLocation: race.venue,
+                          raceDate: race.date,
+                        ),
                       );
                     } else {
                       return SizedBox();
