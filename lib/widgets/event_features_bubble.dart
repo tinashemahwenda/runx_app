@@ -3,7 +3,10 @@ import 'package:flutter/material.dart';
 import '../constants/app_constants.dart';
 
 class EventFeaturesBubble extends StatelessWidget {
-  const EventFeaturesBubble({super.key});
+  final Icon bubbleIcon;
+  final String bubbleText;
+  const EventFeaturesBubble(
+      {super.key, required this.bubbleIcon, required this.bubbleText});
 
   @override
   Widget build(BuildContext context) {
