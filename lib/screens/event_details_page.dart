@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:runx_app/models/events.dart';
+import 'package:runx_app/widgets/event_features_bubble.dart';
 
 import '../constants/app_constants.dart';
 
@@ -79,10 +80,25 @@ class EventDetailsPage extends StatelessWidget {
               ],
             ),
             Padding(
-              padding: const EdgeInsets.all(20.0),
+              padding: const EdgeInsets.only(left: 20.0),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
+                  Row(
+                    spacing: 10,
+                    children: [
+                      EventFeaturesBubble(
+                          bubbleIcon: Icons.watch, bubbleText: '0800hrs'),
+                      EventFeaturesBubble(
+                          bubbleIcon: Icons.water_drop,
+                          bubbleText: 'Water Points'),
+                      EventFeaturesBubble(
+                          bubbleIcon: Icons.backpack, bubbleText: 'Race Pack')
+                    ],
+                  ),
+                  SizedBox(
+                    height: 10,
+                  ),
                   Text(
                     'This is a ${data[1].event} held at ${data[1].venue}. The event will start at ${data[1].startTime} with distances of ${data[1].distances}',
                     style: TextStyle(
