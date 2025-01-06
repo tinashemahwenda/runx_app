@@ -110,6 +110,9 @@ class EventDetailsPage extends StatelessWidget {
                 ],
               ),
             ),
+            SizedBox(
+              height: 20,
+            ),
             ClipRRect(
               borderRadius: BorderRadius.circular(40),
               child: Container(
