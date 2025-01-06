@@ -1,5 +1,3 @@
-// ignore_for_file: unused_field
-
 import 'dart:convert';
 
 import 'package:flutter/material.dart';
@@ -8,7 +6,6 @@ import 'package:runx_app/constants/app_constants.dart';
 import 'package:runx_app/models/events.dart';
 import 'package:runx_app/screens/event_page.dart';
 import 'package:runx_app/widgets/run_event_box.dart';
-//import 'package:runx_app/widgets/run_event_box.dart';
 import 'package:runx_app/widgets/training_plan_box.dart';
 import '../widgets/view_calendar_box.dart';
 
