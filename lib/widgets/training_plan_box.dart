@@ -15,7 +15,7 @@ class TrainingPlanBox extends StatelessWidget {
         children: [
           Container(
             width: AppMeasure.width / 2,
-            height: AppMeasure.height / 4,
+            height: AppMeasure.height / 3.5,
             color: AppColor.tileColor,
             padding: EdgeInsets.all(15),
             child: Column(
