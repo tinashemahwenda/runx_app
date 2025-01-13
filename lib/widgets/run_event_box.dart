@@ -82,7 +82,7 @@ class RunEventBox extends StatelessWidget {
               thickness: 1,
             ),
             SizedBox(
-              height: 10,
+              height: 5,
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
